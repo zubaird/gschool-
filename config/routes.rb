@@ -4,7 +4,18 @@ Rails.application.routes.draw do
 
   root "home#index"
 
-  resources :cars
+  # resources :cars
+
+  get "/cars", to: "cars#index"
+
+  get "/cars/new", to: "cars#new"
+
+  get "/cars/id", to: "cars#show"
+
+  post "/cars", to: "cars#create"
+
+  patch "/cars/id", to: "cars#edit"
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
