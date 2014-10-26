@@ -1,0 +1,21 @@
+<!-- <%= Car.all.each do  %>
+<li><%= Car.name %></li>
+<% end %> -->
+
+
+<table>
+<tr>
+<td>Make:</td>
+<td>Color:</td>
+<td>Year:</td>
+</tr>
+
+  <% Car.all.each  do |car| %>
+  <tr>
+  <td><%= car.make %></td>
+  <td><%= car.color %></td>
+  <td><%= car.year %></td>
+  </tr>
+  <% end %>
+
+</table>

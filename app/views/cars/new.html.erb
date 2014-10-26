@@ -1,0 +1,16 @@
+New Car Template
+
+
+<%= form_for Car.new do |f| %>
+  <%= f.label :make %>:
+  <%= f.text_field :make %><br />
+
+  <%= f.label :color %>:
+  <%= f.text_field :color %><br />
+
+  <%= f.label :year %>:
+  <%= f.text_field :year %><br />
+
+
+  <%= f.submit %>
+<% end %>
